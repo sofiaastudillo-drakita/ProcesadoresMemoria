@@ -1,0 +1,445 @@
+
+*** Running vivado
+    with args -log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source Top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/utils_1/imports/synth_1/Top.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/utils_1/imports/synth_1/Top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1152
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/DrakiV2/Vivaldo/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'sltu', assumed default net type 'wire' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/ALU.v:19]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1232.988 ; gain = 409.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Top.v:6]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/DrakiV2/Vivaldo/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [D:/DrakiV2/Vivaldo/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [D:/DrakiV2/Vivaldo/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 40.125000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 13.375000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 4 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [D:/DrakiV2/Vivaldo/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/DrakiV2/Vivaldo/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [D:/DrakiV2/Vivaldo/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [c:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [c:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'Core' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Core.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Datapath' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Datapath.v:8]
+INFO: [Synth 8-6157] synthesizing module 'ff_SRE' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:17]
+INFO: [Synth 8-6157] synthesizing module 'ff_RE' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ff_RE' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ff_SRE' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:17]
+INFO: [Synth 8-6157] synthesizing module 'PC_Plus_4' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterAdder.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'PC_Plus_4' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterAdder.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Mux_F' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterMux.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterMux.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_F' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterMux.v:64]
+INFO: [Synth 8-6157] synthesizing module 'invCLK' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:348]
+INFO: [Synth 8-6155] done synthesizing module 'invCLK' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:348]
+INFO: [Synth 8-6157] synthesizing module 'ff_D' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:120]
+INFO: [Synth 8-6157] synthesizing module 'ff_SFRE' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'ff_SFRE' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'ff_D' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:120]
+INFO: [Synth 8-6157] synthesizing module 'Extend' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Extend.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Extend.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Extend' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Extend.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Reg_File.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Reg_File.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ff_E' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:151]
+INFO: [Synth 8-6157] synthesizing module 'ff_R32b' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'ff_R32b' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:105]
+INFO: [Synth 8-6157] synthesizing module 'ff_R1b' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'ff_R1b' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:45]
+INFO: [Synth 8-6157] synthesizing module 'ff_R2b' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'ff_R2b' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:60]
+INFO: [Synth 8-6157] synthesizing module 'ff_R4b' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'ff_R4b' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:75]
+INFO: [Synth 8-6157] synthesizing module 'ff_R5b' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'ff_R5b' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'ff_E' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:151]
+INFO: [Synth 8-6157] synthesizing module 'Mux_A' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterMux.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterMux.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_A' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterMux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Mux_B' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterMux.v:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterMux.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_B' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterMux.v:18]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Mux' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterMux.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Mux' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterMux.v:37]
+INFO: [Synth 8-6157] synthesizing module 'PC_Target' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterAdder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC_Target' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterAdder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU_u' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/ALU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_u' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ff_M' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:250]
+INFO: [Synth 8-6155] done synthesizing module 'ff_M' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:250]
+INFO: [Synth 8-6157] synthesizing module 'ff_W' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:306]
+INFO: [Synth 8-6155] done synthesizing module 'ff_W' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterFF.v:306]
+INFO: [Synth 8-6157] synthesizing module 'Mux_W' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterMux.v:81]
+INFO: [Synth 8-226] default block is never used [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterMux.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_W' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/MasterMux.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Datapath.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Control_Unit' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Control_Unit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Main_Decoder' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Dec_Main.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Main_Decoder' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Dec_Main.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Decoder' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Dec_ALU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Decoder' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Dec_ALU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Control_Unit' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Control_Unit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Hazard_unit' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Hazard_Unit.v:53]
+INFO: [Synth 8-6157] synthesizing module 'stall_u' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Hazard_Unit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'stall_u' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Hazard_Unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'flush_u' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Hazard_Unit.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'flush_u' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Hazard_Unit.v:15]
+INFO: [Synth 8-6157] synthesizing module 'forwarding_u' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Hazard_Unit.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'forwarding_u' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Hazard_Unit.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard_unit' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Hazard_Unit.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'Core' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Core.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Mem_Data.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Mem_Data.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Mem_Instr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Mem_Instr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/sources_1/imports/ProcesadorPipelinedV2/Top.v:6]
+WARNING: [Synth 8-7129] Port A[1] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[30] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[29] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[28] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[27] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[26] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[25] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[24] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[23] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[22] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[21] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[20] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[19] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[18] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[17] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[16] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[15] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[14] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[13] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[12] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[11] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module Data_Memory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1326.617 ; gain = 503.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1326.617 ; gain = 503.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1326.617 ; gain = 503.109
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1337.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_inst/inst'
+Finished Parsing XDC File [c:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_inst/inst'
+Parsing XDC File [c:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_inst/inst'
+Finished Parsing XDC File [c:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_inst/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/constrs_1/imports/ProcesadorPipelinedV2/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/constrs_1/imports/ProcesadorPipelinedV2/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.srcs/constrs_1/imports/ProcesadorPipelinedV2/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1440.961 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1440.961 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/DrakiV2/Vivaldo/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1440.961 ; gain = 617.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1440.961 ; gain = 617.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz_inst/inst. (constraint file  {C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.runs/synth_1/dont_touch.xdc}, line 10).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1440.961 ; gain = 617.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1440.961 ; gain = 617.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 17    
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	   4 Input   32 Bit        Muxes := 4     
+	  65 Input   32 Bit        Muxes := 1     
+	   9 Input    9 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port A[31] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[30] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[29] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[28] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[27] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[26] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[25] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[24] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[23] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[22] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[21] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[20] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[19] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[18] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[17] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[16] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[15] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[14] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[13] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[12] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[11] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module Instruction_Memory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1440.961 ; gain = 617.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+--------------------------------------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                                             | Inference | Size (Depth x Width) | Primitives     | 
++------------+--------------------------------------------------------+-----------+----------------------+----------------+
+|Top         | Core_Unit/DatapathCore/reg_file_int/Reg_File_Block_reg | Implied   | 32 x 32              | RAM32M x 12    | 
+|Top         | Data_Mem/RAM_reg                                       | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+--------------------------------------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1440.961 ; gain = 617.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1485.348 ; gain = 661.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+--------------------------------------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                                             | Inference | Size (Depth x Width) | Primitives     | 
++------------+--------------------------------------------------------+-----------+----------------------+----------------+
+|Top         | Core_Unit/DatapathCore/reg_file_int/Reg_File_Block_reg | Implied   | 32 x 32              | RAM32M x 12    | 
+|Top         | Data_Mem/RAM_reg                                       | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+--------------------------------------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1486.387 ; gain = 662.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 1486.387 ; gain = 662.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 1486.387 ; gain = 662.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 1486.387 ; gain = 662.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 1486.387 ; gain = 662.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 1486.387 ; gain = 662.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 1486.387 ; gain = 662.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |    40|
+|3     |LUT1       |     4|
+|4     |LUT2       |    39|
+|5     |LUT3       |   118|
+|6     |LUT4       |    74|
+|7     |LUT5       |   214|
+|8     |LUT6       |   410|
+|9     |MMCME2_ADV |     1|
+|10    |MUXF7      |    48|
+|11    |RAM32M     |    10|
+|12    |RAM32X1D   |     4|
+|13    |RAM64X1S   |    32|
+|14    |FDRE       |   508|
+|15    |IBUF       |     2|
+|16    |OBUF       |    36|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 1486.387 ; gain = 662.879
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 1486.387 ; gain = 548.535
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 1486.387 ; gain = 662.879
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1487.250 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 135 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 14 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1491.941 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (inverted pins: WCLK) (RAMD32(x2)): 4 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+Synth Design complete, checksum: 94fcfd82
+INFO: [Common 17-83] Releasing license: Synthesis
+114 Infos, 55 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1491.941 ; gain = 1063.266
+INFO: [Common 17-1381] The checkpoint 'C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  7 01:29:31 2026...

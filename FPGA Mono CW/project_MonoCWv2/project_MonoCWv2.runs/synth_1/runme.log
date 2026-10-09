@@ -1,0 +1,444 @@
+
+*** Running vivado
+    with args -log wrapper_nexys_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source wrapper_nexys_top.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source wrapper_nexys_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/utils_1/imports/synth_1/wrapper_nexys_top.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/utils_1/imports/synth_1/wrapper_nexys_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top wrapper_nexys_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9944
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/DrakiV2/Vivaldo/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'sltu', assumed default net type 'wire' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Alu.v:20]
+INFO: [Synth 8-11241] undeclared symbol 'PCSrc', assumed default net type 'wire' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/CoreSC.v:18]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1233.332 ; gain = 407.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'wrapper_nexys_top' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/WrapperTop.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/DrakiV2/Vivaldo/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [D:/DrakiV2/Vivaldo/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [D:/DrakiV2/Vivaldo/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 40.125000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 13.375000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 4 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [D:/DrakiV2/Vivaldo/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/DrakiV2/Vivaldo/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [D:/DrakiV2/Vivaldo/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [c:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [c:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/TopSC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'riscvsingle' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/CoreSC.v:4]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Controller.v:4]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/MainDec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/MainDec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/AluDec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/AluDec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Controller.v:4]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Datapath.v:8]
+INFO: [Synth 8-6157] synthesizing module 'flopr32' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/FlipFlops.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'flopr32' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/FlipFlops.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2_32' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Multiplexer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux2_32' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Multiplexer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/RegFile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/RegFile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/ExtendUnit.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/ExtendUnit.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/ExtendUnit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Alu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux3_32' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Multiplexer.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mux3_32' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Multiplexer.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Datapath.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'riscvsingle' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/CoreSC.v:4]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/InstMem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/InstMem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/DataMem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/DataMem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/TopSC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'counter_program_cycles_instr' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:423]
+INFO: [Synth 8-6157] synthesizing module 'program_detector' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'program_detector' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:54]
+INFO: [Synth 8-6157] synthesizing module 'count_inst' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'count_inst' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:3]
+INFO: [Synth 8-6157] synthesizing module 'count_ciclos' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'count_ciclos' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:32]
+INFO: [Synth 8-6157] synthesizing module 'select_count' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'select_count' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:46]
+INFO: [Synth 8-6157] synthesizing module 'Memory_for_FPGA' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'Memory_for_FPGA' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:94]
+INFO: [Synth 8-6157] synthesizing module 'counter_butt_mem' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:404]
+INFO: [Synth 8-6157] synthesizing module 'button_debounce_counter' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:267]
+INFO: [Synth 8-6155] done synthesizing module 'button_debounce_counter' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:267]
+INFO: [Synth 8-6155] done synthesizing module 'counter_butt_mem' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:404]
+INFO: [Synth 8-6155] done synthesizing module 'counter_program_cycles_instr' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:423]
+INFO: [Synth 8-6157] synthesizing module 'Clock_divider_1000Hz' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:376]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_divider_1000Hz' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:376]
+INFO: [Synth 8-6157] synthesizing module 'Seven_seg_dec_n_mux' [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:323]
+INFO: [Synth 8-226] default block is never used [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:344]
+INFO: [Synth 8-6155] done synthesizing module 'Seven_seg_dec_n_mux' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/Wrapper_Nexys.v:323]
+INFO: [Synth 8-6155] done synthesizing module 'wrapper_nexys_top' (0#1) [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/sources_1/imports/SingleCycle/WrapperTop.v:3]
+WARNING: [Synth 8-7129] Port WA3[6] in module Memory_for_FPGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[30] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[29] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[28] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[27] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[26] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[25] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[24] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[23] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[22] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[21] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[20] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[19] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[18] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[17] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[16] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[15] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[14] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[13] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[12] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[11] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[6] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[5] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[4] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[3] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[2] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[1] in module datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[0] in module datapath is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1328.113 ; gain = 502.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1328.113 ; gain = 502.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1328.113 ; gain = 502.473
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1328.363 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_inst/inst'
+Finished Parsing XDC File [c:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_inst/inst'
+Parsing XDC File [c:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_inst/inst'
+Finished Parsing XDC File [c:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_inst/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/wrapper_nexys_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/wrapper_nexys_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/constrs_1/imports/ProcesadorPipelinedV2/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/constrs_1/imports/ProcesadorPipelinedV2/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.srcs/constrs_1/imports/ProcesadorPipelinedV2/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/wrapper_nexys_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/wrapper_nexys_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/wrapper_nexys_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/wrapper_nexys_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1426.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1426.836 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/DrakiV2/Vivaldo/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1426.836 ; gain = 601.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1426.836 ; gain = 601.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz_inst/inst. (constraint file  {C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.runs/synth_1/dont_touch.xdc}, line 10).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1426.836 ; gain = 601.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1426.836 ; gain = 601.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 10    
+	   4 Input   32 Bit        Muxes := 1     
+	  14 Input   32 Bit        Muxes := 1     
+	  65 Input   32 Bit        Muxes := 1     
+	   9 Input    9 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 5     
+	  14 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port A[31] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[30] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[29] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[28] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[27] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[26] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[25] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[24] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[23] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[22] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[21] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[20] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[19] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[18] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[17] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[16] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[15] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[14] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[13] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[12] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[11] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module imem is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1426.836 ; gain = 601.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------------+-------------------------------------------+-----------+----------------------+----------------+
+|Module Name       | RTL Object                                | Inference | Size (Depth x Width) | Primitives     | 
++------------------+-------------------------------------------+-----------+----------------------+----------------+
+|wrapper_nexys_top | toppyty/rvsingle/dp/rf/Reg_File_Block_reg | Implied   | 32 x 32              | RAM32M x 12    | 
+|wrapper_nexys_top | toppyty/dmem/RAM_reg                      | Implied   | 64 x 32              | RAM64X1S x 32  | 
+|wrapper_nexys_top | cpci/Memmy/Reg_File_Block_reg             | Implied   | 64 x 32              | RAM64M x 11    | 
++------------------+-------------------------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1426.836 ; gain = 601.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1485.633 ; gain = 659.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------------+-------------------------------------------+-----------+----------------------+----------------+
+|Module Name       | RTL Object                                | Inference | Size (Depth x Width) | Primitives     | 
++------------------+-------------------------------------------+-----------+----------------------+----------------+
+|wrapper_nexys_top | toppyty/rvsingle/dp/rf/Reg_File_Block_reg | Implied   | 32 x 32              | RAM32M x 12    | 
+|wrapper_nexys_top | toppyty/dmem/RAM_reg                      | Implied   | 64 x 32              | RAM64X1S x 32  | 
+|wrapper_nexys_top | cpci/Memmy/Reg_File_Block_reg             | Implied   | 64 x 32              | RAM64M x 11    | 
++------------------+-------------------------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1486.695 ; gain = 661.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1486.695 ; gain = 661.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1486.695 ; gain = 661.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1486.695 ; gain = 661.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1486.695 ; gain = 661.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1486.695 ; gain = 661.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1486.695 ; gain = 661.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |    70|
+|3     |LUT1       |     8|
+|4     |LUT2       |   130|
+|5     |LUT3       |    45|
+|6     |LUT4       |   108|
+|7     |LUT5       |   247|
+|8     |LUT6       |   443|
+|9     |MMCME2_ADV |     1|
+|10    |MUXF7      |    18|
+|11    |RAM32M     |    10|
+|12    |RAM32X1D   |     4|
+|13    |RAM64M     |    11|
+|14    |RAM64X1S   |    32|
+|15    |FDRE       |   157|
+|16    |FDSE       |    32|
+|17    |IBUF       |     5|
+|18    |OBUF       |    15|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1486.695 ; gain = 661.055
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1486.695 ; gain = 562.332
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1486.695 ; gain = 661.055
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1494.461 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 146 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1502.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 57 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 11 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+Synth Design complete, checksum: b27d34e8
+INFO: [Common 17-83] Releasing license: Synthesis
+94 Infos, 63 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 1502.137 ; gain = 1072.621
+INFO: [Common 17-1381] The checkpoint 'C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.runs/synth_1/wrapper_nexys_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file wrapper_nexys_top_utilization_synth.rpt -pb wrapper_nexys_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  9 05:36:46 2026...

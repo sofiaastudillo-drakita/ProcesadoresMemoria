@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Oct  5 22:56:30 2026
+# Process ID: 16020
+# Current directory: C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.runs/impl_1
+# Command line: vivado.exe -log wrapper_nexys_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source wrapper_nexys_top.tcl -notrace
+# Log file: C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.runs/impl_1/wrapper_nexys_top.vdi
+# Journal file: C:/Users/paula/Downloads/CdeP/FPGA Mono CW/project_MonoCWv2/project_MonoCWv2.runs/impl_1\vivado.jou
+# Running On: LAPTOP-6D98Q4KP, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 12202 MB
+#-----------------------------------------------------------
+source wrapper_nexys_top.tcl -notrace

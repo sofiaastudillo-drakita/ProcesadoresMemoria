@@ -1,0 +1,93 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Oct  9 06:05:57 2026
+| Host         : LAPTOP-6D98Q4KP running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file wrapper_nexys_top_control_sets_placed.rpt
+| Design       : wrapper_nexys_top
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    15 |
+|    Minimum number of control sets                        |    15 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    31 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    15 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    12 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               3 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             444 |          133 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             218 |           51 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+--------------+
+|         Clock Signal        |                                Enable Signal                                |                           Set/Reset Signal                           | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_sevenseg/clk_int_reg_0 |                                                                             |                                                                      |                1 |              3 |         3.00 |
+|  clk_wiz_inst/inst/clk_out1 | cpci/detecty/zero_count                                                     | toppyty/Core_Unit/DatapathCore/ff_Execute/ff_InstrE/reset[0]         |                1 |              4 |         4.00 |
+|  clk_wiz_inst/inst/clk_out1 | cpci/count_for_mem/butt_deb/count[6]_i_1_n_0                                | reset_IBUF                                                           |                2 |              7 |         3.50 |
+|  clk_wiz_inst/inst/clk_out1 |                                                                             | clk_sevenseg/counter[0]_i_1_n_0                                      |                5 |             19 |         3.80 |
+|  clk_wiz_inst/inst/clk_out1 | cpci/count_for_mem/butt_deb/debounce_cnt[0]_i_2_n_0                         | cpci/count_for_mem/butt_deb/debounce_cnt[0]_i_1_n_0                  |                6 |             21 |         3.50 |
+|  clk_wiz_inst/inst/clk_out1 | toppyty/Core_Unit/DatapathCore/ff_Execute/ff_InstrE/program_started_reg_0   | reset_IBUF                                                           |                8 |             32 |         4.00 |
+|  clk_wiz_inst/inst/clk_out1 | toppyty/Core_Unit/DatapathCore/ff_Memory/ff_MemWriteM/MemWriteM             |                                                                      |                8 |             32 |         4.00 |
+|  clk_wiz_inst/inst/clk_out1 | cpci/detecty/program_started_reg_1                                          | reset_IBUF                                                           |                8 |             32 |         4.00 |
+|  clk_wiz_inst/inst/clk_out1 | toppyty/Core_Unit/DatapathCore/ff_Decode/ff_RDIM/ff_RE_interior/enableStall | reset_IBUF                                                           |                9 |             32 |         3.56 |
+| ~clk_wiz_inst/inst/clk_out1 | cpci/detecty/program_started_reg_3                                          |                                                                      |               11 |             44 |         4.00 |
+| ~clk_wiz_inst/inst/clk_out1 | cpci/detecty/program_started_reg_2                                          |                                                                      |               11 |             44 |         4.00 |
+| ~clk_wiz_inst/inst/clk_out1 | toppyty/Core_Unit/DatapathCore/ff_Writeback/ff_RegWriteW/RegWriteWOB        |                                                                      |               11 |             88 |         8.00 |
+|  clk_wiz_inst/inst/clk_out1 | toppyty/Core_Unit/DatapathCore/ff_Execute/ff_InstrE/E[0]                    | toppyty/Core_Unit/DatapathCore/ff_Execute/ff_InstrE/qout_reg[3]_1[0] |               17 |             90 |         5.29 |
+|  clk_wiz_inst/inst/clk_out1 |                                                                             | toppyty/Core_Unit/DatapathCore/ff_Execute/ff_InstrE/SR[0]            |               42 |            177 |         4.21 |
+|  clk_wiz_inst/inst/clk_out1 |                                                                             | reset_IBUF                                                           |               86 |            248 |         2.88 |
++-----------------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+--------------+
+
+

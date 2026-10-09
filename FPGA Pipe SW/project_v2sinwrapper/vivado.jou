@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Oct  5 02:05:17 2026
+# Process ID: 12908
+# Current directory: C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15052 C:\Users\paula\Downloads\CdeP\FPGA Pipe SW\project_v2sinwrapper\project_v2sinwrapper.xpr
+# Log file: C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/vivado.log
+# Journal file: C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper\vivado.jou
+# Running On: LAPTOP-6D98Q4KP, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 12202 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/paula/Downloads/CdeP/FPGA Pipe SW/project_v2sinwrapper/project_v2sinwrapper.xpr}
+update_compile_order -fileset sources_1
+reset_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
